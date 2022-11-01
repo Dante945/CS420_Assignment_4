@@ -1,0 +1,54 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww22280\viewh12860\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs36 \cf0 Time Results:
+\fs24 \
+
+\f1\b0 \
+
+\f0\b\fs32 Clojure
+\f1\b0\fs24 \
+\ul Sorted\ulnone \
+Quick - 0.5ms\
+Merge - 6881ms\
+Built - 100ms\
+\
+\ul Reverse\ulnone \
+Quick - 53ms\
+Merge - 6800ms\
+Built - 100ms\
+\
+
+\f0\b\fs32 Python
+\f1\b0\fs24 \
+\ul Sorted\ulnone \
+Quick - 6800ms\
+Merge - 3352ms\
+Built - 9ms\
+\
+\ul Reverse\ulnone \
+Quick - 8339ms\
+Merge - 3371ms\
+Built - 9ms\
+\
+
+\f0\b\fs32 Part 6
+\f1\b0\fs24 \
+In terms of the difference in the sorted input of quick sort when compared to Python to Clojure, it's not even close. The use of the lazy-cat function results in Clojure being over 10,000x faster on the sorted input. When it came to merge sort, Python was around 2 times faster than Clojure.\
+\
+When it came to the reverse order it was pretty much the same comparison. Quick sort within Clojure was tremendously faster than python on the reversed list while python was just slightly faster than Clojure when using merge sort\
+\
+To be honest, I wasn\'92t sure what to expect when it came to the overall time taken to execute these functions. From taking CS 460 I knew that both of these functions had an average time complexity of n log n, however when it came to the time difference on a language-specific level I\'92m uninformed.\
+\
+One unexpected thing was how much faster the implementation of quick sort was in Clojure compared to all of these other comparison-based sorting algorithms. Although they share the same time complexity, they differed greatly in the time taken to execute.\
+\
+I touched on the performance of the function above but what I can say about the ease of implementation, Python was a lot easier for several reasons. The main reason was that I\'92m currently enrolled in CS 460 Algorithms and I just implemented these functions a few weeks ago. On top of that, there are tons of resources for python implementations as well as it\'92s generally easier to write python code as it's more forgivable. On the other hand, Clojure I still struggle with quite a bit since I haven\'92t fully mastered the functional programming thought process and there aren\'92t as many resources out there. \
+\
+
+\f0\b\fs32 Part 7
+\f1\b0\fs24 \
+There were some interesting findings while exploring the built-in sorting functions in both Python and Clojure. First and foremost, when comparing the built-in sorting function in python versus merge and quick was no contest. It was hundreds of times faster when using the built-in sorting function. Next, when comparing the built-in sorting function in Clojure versus merge and quick were both different. It was much faster than merge sort but quick sort in Clojure is still unmatched, being on average 100 times faster than the built-in sorting function. Finally, exploring the cross-language comparison of the built-in functions, Python is around 10 times faster than Clojure.}
