@@ -23,7 +23,7 @@
 * Built - 9ms
 
 ## Part 6
-In terms of the difference in the sorted input of quick sort when compared to Python to Clojure, it's not even close. The use of the lazy-cat function results in Clojure being over 10,000x faster on the sorted input. When it came to merge sort, Python was around 2 times faster than Clojure.
+In terms of the difference in the sorted input of quick sort when compared to Python to Clojure, it's not even close. The use of the lazy-cat function results in Clojure being over 10,000x faster on the sorted input. It seems that the reason behind this lies ns the concept of lazy evaluation and that it will delay the evaluation of an function until its value is needed. When it came to merge sort, Python was around 2 times faster than Clojure.
 
 When it came to the reverse order it was pretty much the same comparison. Quick sort within Clojure was tremendously faster than python on the reversed list while python was just slightly faster than Clojure when using merge sort
 
