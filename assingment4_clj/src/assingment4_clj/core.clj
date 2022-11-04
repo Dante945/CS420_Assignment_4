@@ -1,5 +1,6 @@
 (ns assingment4-clj.core
-  (:gen-class))
+  (:gen-class) 
+  (:require [clojure.test :refer [deftest is testing]]))
 
 ;; Part 1
 (defn quicksort
@@ -34,23 +35,22 @@
                   (recur (conj temp (first right)) left (rest right))))))))
 
 ;; Part 3
-(defn test-mergesort
-  "Test to ensure mergesort works as intended"
-  [list]
-  (if (= (mergesort list) (sort list))
-    "Merge-Sort sorted the list!"
-    "Merge-Sort failed to sort the list"))
+(deftest mergesort?
+  (testing "Normal case"
+    (is (= [1 2 2 3 4 6] (mergesort [2 1 4 6 3 2])))
+    (is (= [-2 -1 2 4 5 10] (mergesort [10 -2 5 4 2 -1])))
+    (is (= [1 1 2 6 9] (mergesort [2 6 1 9 1])))
+    (is (= [1 2 3 4 5] (mergesort [5 4 3 2 1])))))
+(mergesort?)
 
-(test-mergesort [2 6 1 9 1])
+(deftest quicksort?
+  (testing "Normal case"
+    (is (= [1 2 2 3 4 6] (quicksort [2 1 4 6 3 2])))
+    (is (= [-2 -1 2 4 5 10] (quicksort [10 -2 5 4 2 -1])))
+    (is (= [1 1 2 6 9] (quicksort [2 6 1 9 1])))
+    (is (= [1 2 3 4 5] (quicksort [ 5 4 3 2 1])))))
+(quicksort?)
 
-(defn test-quicksort
-  "Test to ensure quicksort works as intended"
-  [list]
-  (if (= (quicksort list) (sort list))
-    "Quick-Sort sorted the list!"
-    "Quick-Sort failed to sort the list"))
-
-(test-quicksort [2 6 1 9 1])
 
 ;; Part 5
 

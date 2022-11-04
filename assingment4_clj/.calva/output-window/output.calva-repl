@@ -4,7 +4,9 @@
 ; Please see https://calva.io/output/ for more info.
 ; Happy coding! ♥️
 
-; Jacking in...; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless; Hooking up nREPL sessions...
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless
+; Hooking up nREPL sessions...
 ; Connected session: clj
 ; TIPS:
 ;   - You can edit the contents here. Use it as a REPL if you like.
@@ -14,29 +16,42 @@
 ;      when the cursor is after the last contents at the prompt
 ;   - Clojure lines in stack traces are peekable and clickable.
 clj꞉assingment4-clj.core꞉>  ; Use `alt+enter` to evaluate
-; Jack-in done.clj꞉assingment4-clj.core꞉> 
+; Jack-in done.
+clj꞉assingment4-clj.core꞉> 
+this prints once
+deref:  2
+@:  2
 nil
 clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/quicksort
-clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/mergesort
-clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/test-mergesort
-clj꞉assingment4-clj.core꞉> 
-"Merge-Sort sorted the list!"
-clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/test-quicksort
-clj꞉assingment4-clj.core꞉> 
-"Quick-Sort sorted the list!"
-clj꞉assingment4-clj.core꞉> 
-"Elapsed time: 0.08425 msecs"
+this prints once
+Too early #future[{:status :ready, :val 2} 0x76356c1]
+deref:  2
+@:  2
 nil
 clj꞉assingment4-clj.core꞉> 
-"Elapsed time: 0.093958 msecs"
-(0 1 2 3 4 5 6 7 8 9)
+#'assingment4-clj.core/page
 clj꞉assingment4-clj.core꞉> 
-"Elapsed time: 0.07375 msecs"
-(0
+12
+nil
+clj꞉assingment4-clj.core꞉> 
+12
+nil
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 0.114208 msecs"
+nil
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 108.4645 msecs"
+nil
+clj꞉assingment4-clj.core꞉> 
+; Execution error (StackOverflowError) at assingment4-clj.core/quicksort (core.clj:8).
+; null
+
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 15.740917 msecs"
+nil
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 1.186125 msecs"
+[0
  1
  2
  3
@@ -86,10 +101,10 @@ clj꞉assingment4-clj.core꞉> 
  47
  48
  49
- ...)
+ ...]
 clj꞉assingment4-clj.core꞉> 
-"Elapsed time: 0.034667 msecs"
-(0
+"Elapsed time: 2934.764209 msecs"
+[0
  1
  2
  3
@@ -139,10 +154,10 @@ clj꞉assingment4-clj.core꞉> 
  47
  48
  49
- ...)
+ ...]
 clj꞉assingment4-clj.core꞉> 
-"Elapsed time: 0.051 msecs"
-(0
+"Elapsed time: 4565.914292 msecs"
+[0
  1
  2
  3
@@ -192,5 +207,61 @@ clj꞉assingment4-clj.core꞉> 
  47
  48
  49
- ...)
+ ...]
+clj꞉assingment4-clj.core꞉> 
+; Syntax error compiling at (src/assingment4_clj/core.clj:54:1).
+; Unable to resolve symbol: deftest in this context
+
+clj꞉assingment4-clj.core꞉> 
+nil
+clj꞉assingment4-clj.core꞉> 
+#'assingment4-clj.core/quicksort?
+clj꞉assingment4-clj.core꞉> 
+
+FAIL in (quicksort?) (form-init13623104764675037312.clj:59)
+Normal case
+expected: (= [1 2 4 5] (quicksort [5 4 3 2 1]))
+  actual: (not (= [1 2 4 5] (1 2 3 4 5)))
+nil
+clj꞉assingment4-clj.core꞉> 
+#'assingment4-clj.core/quicksort?
+clj꞉assingment4-clj.core꞉> 
+nil
+clj꞉assingment4-clj.core꞉> 
+nil
+clj꞉assingment4-clj.core꞉> 
+#'assingment4-clj.core/mergesort?
+clj꞉assingment4-clj.core꞉> 
+nil
+clj꞉assingment4-clj.core꞉> 
+; Execution error (StackOverflowError) at assingment4-clj.core/quicksort (core.clj:8).
+; null
+
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 0.102667 msecs"
+nil
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 0.166625 msecs"
+nil
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 0.116333 msecs"
+nil
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 0.11125 msecs"
+nil
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 0.089042 msecs"
+nil
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 17.264667 msecs"
+nil
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 15.828417 msecs"
+nil
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 15.299291 msecs"
+nil
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 15.892916 msecs"
+nil
 clj꞉assingment4-clj.core꞉> 
