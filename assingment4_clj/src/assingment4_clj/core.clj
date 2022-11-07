@@ -8,11 +8,9 @@
   [coll]
   (if (< (count coll) 2)
     coll
-    ;; Define pivot to be the first element of the collection
     (let [pivot (first coll)
           left (filter #(< % pivot) (rest coll))
           right (filter #(<= pivot %) (rest coll))]
-      ;; lazy-cat doesn't process until we need it 
       (lazy-cat (quicksort left) [pivot] (quicksort right)))))
 
 ;; Part 2
@@ -33,6 +31,19 @@
           :else (if (<= (first left) (first right))
                   (recur (conj temp (first left)) (rest left) right)
                   (recur (conj temp (first right)) left (rest right))))))))
+;; Extra
+(defn quicksortv2
+  "Divide and Conquer algorithm that uses a random pivot"
+  [coll]
+  (if (<= (count coll) 1)
+    coll
+    (let [rand_idx (rand-int (count coll))
+          rand_elem (nth coll rand_idx)
+          ;; Remove random pivot from coll
+          list (keep-indexed #(if (not= %1 rand_idx) %2 nil) coll) 
+          left (filter #(< % rand_elem) list)
+          right (filter #(<= rand_elem %) list)]
+      (concat (quicksortv2 left) [rand_elem] (quicksortv2 right)))))
 
 ;; Part 3
 (deftest mergesort?
@@ -51,6 +62,15 @@
     (is (= [1 2 3 4 5] (quicksort [ 5 4 3 2 1])))))
 (quicksort?)
 
+;; Extra
+(deftest quicksortv2?
+  (testing "Normal case"
+    (is (= [1 2 2 3 4 6] (quicksortv2 [2 1 4 6 3 2])))
+    (is (= [-2 -1 2 4 5 10] (quicksortv2 [10 -2 5 4 2 -1])))
+    (is (= [1 1 2 6 9] (quicksortv2 [2 6 1 9 1])))
+    (is (= [1 2 3 4 5] (quicksortv2 [5 4 3 2 1])))))
+(quicksortv2?)
+
 
 ;; Part 5
 
@@ -65,6 +85,14 @@
 
 ;; Timing mergesort on 1 million reversed numbers
 (time (do (mergesort (reverse (range 1000000))) nil))
+
+;; Extra 
+
+;; Timing quicksortv2 on 1 million sorted numbers
+(time (do (quicksortv2 (range 1000000)) nil))
+
+;; Timing quicksortv2 on 1 million reversed numbers
+(time (do (quicksortv2 (reverse (range 1000000))) nil))
 
 ;; Part 7
 
