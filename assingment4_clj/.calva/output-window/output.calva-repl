@@ -18,101 +18,35 @@
 clj꞉assingment4-clj.core꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉assingment4-clj.core꞉> 
-((1 2) (3) (4 5))
-clj꞉assingment4-clj.core꞉> 
-((1 2) (3 4 5))
-clj꞉assingment4-clj.core꞉> 
-(1 2)
-clj꞉assingment4-clj.core꞉> 
-(1 2)
-clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/quicksortv2
-clj꞉assingment4-clj.core꞉> 
 nil
-clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/quicksortv2?
-clj꞉assingment4-clj.core꞉> 
-
-FAIL in (quicksortv2?) (form-init1831188626005924642.clj:69)
-Normal case
-expected: (= [1 2 2 3 4 6] (quicksortv2 [2 1 4 6 3 2]))
-  actual: (not (= [1 2 2 3 4 6] (2 1 3 4 6)))
-
-FAIL in (quicksortv2?) (form-init1831188626005924642.clj:70)
-Normal case
-expected: (= [-2 -1 2 4 5 10] (quicksortv2 [10 -2 5 4 2 -1]))
-  actual: (not (= [-2 -1 2 4 5 10] (10 4 -2)))
-
-FAIL in (quicksortv2?) (form-init1831188626005924642.clj:71)
-Normal case
-expected: (= [1 1 2 6 9] (quicksortv2 [2 6 1 9 1]))
-  actual: (not (= [1 1 2 6 9] (6 2 1)))
-
-FAIL in (quicksortv2?) (form-init1831188626005924642.clj:72)
-Normal case
-expected: (= [1 2 3 4 5] (quicksortv2 [5 4 3 2 1]))
-  actual: (not (= [1 2 3 4 5] (5 4 3 2 1)))
-nil
-clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/quicksortv2
-clj꞉assingment4-clj.core꞉> 
-(2 4 6 1)
-clj꞉assingment4-clj.core꞉> 
-(2 1 3 6 4)
-clj꞉assingment4-clj.core꞉> 
-(2 1 2 3 4 6)
-clj꞉assingment4-clj.core꞉> 
-(1 2 3 4 6)
-clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/quicksortv2
-clj꞉assingment4-clj.core꞉> 
-(2 2 1 6)
-clj꞉assingment4-clj.core꞉> 
-(3 4 2 2 1 6)
-clj꞉assingment4-clj.core꞉> 
-(2 2 1)
-clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/quicksortv2
-clj꞉assingment4-clj.core꞉> 
-(1 2 2 6 4 3)
-clj꞉assingment4-clj.core꞉> 
-(1 2 6 4 3)
-clj꞉assingment4-clj.core꞉> 
-(1 2 4 6)
-clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/quicksortv2
-clj꞉assingment4-clj.core꞉> 
-(1 2 4 6)
-clj꞉assingment4-clj.core꞉> 
-(3 2 2 4 6 1)
-clj꞉assingment4-clj.core꞉> 
-(1 2 2 3 4 6)
-clj꞉assingment4-clj.core꞉> 
-(1 2)
-clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/quicksortv2
-clj꞉assingment4-clj.core꞉> 
-(3 6 4 2 1)
-clj꞉assingment4-clj.core꞉> 
-(6 4 2 1)
-clj꞉assingment4-clj.core꞉> 
-(3 4 6 2 1)
-clj꞉assingment4-clj.core꞉> 
-(6 3 4 2 2 1)
 clj꞉assingment4-clj.core꞉> 
 #'assingment4-clj.core/quicksort
 clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/quicksortv2
+#'assingment4-clj.core/mergesort
 clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/quicksortv2?
+#'assingment4-clj.core/mergesort?
 clj꞉assingment4-clj.core꞉> 
 nil
 clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/quicksortv2
+#'assingment4-clj.core/quicksort?
 clj꞉assingment4-clj.core꞉> 
-"Elapsed time: 2155.305792 msecs"
 nil
 clj꞉assingment4-clj.core꞉> 
-"Elapsed time: 4949.732542 msecs"
+"Elapsed time: 2107.559167 msecs"
+nil
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 3381.466209 msecs"
+nil
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 4934.599583 msecs"
+nil
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 3041.974625 msecs"
+nil
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 146.380875 msecs"
+nil
+clj꞉assingment4-clj.core꞉> 
+"Elapsed time: 52.100209 msecs"
 nil
 clj꞉assingment4-clj.core꞉> 
