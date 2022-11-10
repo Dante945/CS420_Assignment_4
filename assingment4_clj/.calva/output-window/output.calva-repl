@@ -50,3 +50,105 @@ clj꞉assingment4-clj.core꞉> 
 "Elapsed time: 52.100209 msecs"
 nil
 clj꞉assingment4-clj.core꞉> 
+Quicksort on sorted list of 1,000,000 numbers:
+"Elapsed time: 2159.608375 msecs"
+Mergesort on sorted list of 1,000,000 numbers:
+"Elapsed time: 3110.893833 msecs"
+Quicksort on reverse sorted list of 1,000,000 numbers:
+"Elapsed time: 5153.892666 msecs"
+Mergesort on reverse sorted list of 1,000,000 numbers:
+"Elapsed time: 3267.074125 msecs"
+"PART 5 FINISHED"
+clj꞉assingment4-clj.core꞉> 
+Built-in Sort on sorted list of 1 million numbers:
+"Elapsed time: 102.134042 msecs"
+Built-in Sort on reverse list of 1 million numbers:
+"Elapsed time: 36.495875 msecs"
+(0
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ ...)
+clj꞉assingment4-clj.core꞉> 
+Built-in Sort on sorted list of 1 million numbers:
+"Elapsed time: 92.457083 msecs"
+Built-in Sort on reverse list of 1 million numbers:
+"Elapsed time: 37.298125 msecs"
+"Part 7 Complete."
+clj꞉assingment4-clj.core꞉> 
+nil
+clj꞉assingment4-clj.core꞉> 
+#'assingment4-clj.core/quicksort
+clj꞉assingment4-clj.core꞉> 
+#'assingment4-clj.core/mergesort
+clj꞉assingment4-clj.core꞉> 
+#'assingment4-clj.core/mergesort?
+clj꞉assingment4-clj.core꞉> 
+nil
+clj꞉assingment4-clj.core꞉> 
+#'assingment4-clj.core/quicksort?
+clj꞉assingment4-clj.core꞉> 
+nil
+clj꞉assingment4-clj.core꞉> 
+Quicksort on sorted list of 1 million numbers:
+"Elapsed time: 2256.884542 msecs"
+Mergesort on sorted list of 1 million numbers:
+"Elapsed time: 3252.587084 msecs"
+Quicksort on reverse list of 1 million numbers:
+"Elapsed time: 5387.777834 msecs"
+Mergesort on reverse list of 1 million numbers:
+"Elapsed time: 3319.365083 msecs"
+"Part 5 Complete"
+clj꞉assingment4-clj.core꞉> 
+Built-in Sort on sorted list of 1 million numbers:
+"Elapsed time: 59.075042 msecs"
+Built-in Sort on reverse list of 1 million numbers:
+"Elapsed time: 34.755125 msecs"
+"Part 7 Complete"
+clj꞉assingment4-clj.core꞉> 

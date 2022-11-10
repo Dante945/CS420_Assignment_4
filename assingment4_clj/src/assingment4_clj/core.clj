@@ -53,23 +53,21 @@
 (quicksort?)
 
 ;; Part 5
-
-;; Timing quicksort on 1 million sorted numbers
-(time (do (quicksort (range 1000000)) nil))
-
-;; Timing mergesort on 1 million sorted numbers
-(time (do (mergesort (range 1000000)) nil))
-
-;; Timing quicksort on 1 million reversed numbers
-(time (do (quicksort (reverse (range 1000000))) nil))
-
-;; Timing mergesort on 1 million reversed numbers
-(time (do (mergesort (reverse (range 1000000))) nil))
+(do
+  (println "Quicksort on sorted list of 1 million numbers:")
+  (time (quicksort (range 1000000)))
+  (println "Mergesort on sorted list of 1 million numbers:")
+  (time (mergesort (range 1000000)))
+  (println "Quicksort on reverse list of 1 million numbers:")
+  (time (quicksort (reverse (range 1000000))))
+  (println "Mergesort on reverse list of 1 million numbers:")
+  (time (mergesort (reverse (range 1000000))))
+  "Part 5 Complete")
 
 ;; Part 7
-
-;; Timing built-in on 1 million sorted numbers
-(time (do (sort (range 1000000)) nil))
-
-;; Timing built-in on 1 million reversed numbers
-(time (do (sort (reverse (range 1000000))) nil))
+(do
+  (println "Built-in Sort on sorted list of 1 million numbers:")
+  (time (sort (range 1000000)))
+  (println "Built-in Sort on reverse list of 1 million numbers:")
+  (time (sort (reverse (range 1000000))))
+  "Part 7 Complete")
