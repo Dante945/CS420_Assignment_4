@@ -32,38 +32,6 @@ clj꞉assingment4-clj.core꞉> 
 clj꞉assingment4-clj.core꞉> 
 nil
 clj꞉assingment4-clj.core꞉> 
-"Elapsed time: 2107.559167 msecs"
-nil
-clj꞉assingment4-clj.core꞉> 
-"Elapsed time: 3381.466209 msecs"
-nil
-clj꞉assingment4-clj.core꞉> 
-"Elapsed time: 4934.599583 msecs"
-nil
-clj꞉assingment4-clj.core꞉> 
-"Elapsed time: 3041.974625 msecs"
-nil
-clj꞉assingment4-clj.core꞉> 
-"Elapsed time: 146.380875 msecs"
-nil
-clj꞉assingment4-clj.core꞉> 
-"Elapsed time: 52.100209 msecs"
-nil
-clj꞉assingment4-clj.core꞉> 
-Quicksort on sorted list of 1,000,000 numbers:
-"Elapsed time: 2159.608375 msecs"
-Mergesort on sorted list of 1,000,000 numbers:
-"Elapsed time: 3110.893833 msecs"
-Quicksort on reverse sorted list of 1,000,000 numbers:
-"Elapsed time: 5153.892666 msecs"
-Mergesort on reverse sorted list of 1,000,000 numbers:
-"Elapsed time: 3267.074125 msecs"
-"PART 5 FINISHED"
-clj꞉assingment4-clj.core꞉> 
-Built-in Sort on sorted list of 1 million numbers:
-"Elapsed time: 102.134042 msecs"
-Built-in Sort on reverse list of 1 million numbers:
-"Elapsed time: 36.495875 msecs"
 (0
  1
  2
@@ -116,39 +84,13 @@ Built-in Sort on reverse list of 1 million numbers:
  49
  ...)
 clj꞉assingment4-clj.core꞉> 
-Built-in Sort on sorted list of 1 million numbers:
-"Elapsed time: 92.457083 msecs"
-Built-in Sort on reverse list of 1 million numbers:
-"Elapsed time: 37.298125 msecs"
-"Part 7 Complete."
-clj꞉assingment4-clj.core꞉> 
-nil
-clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/quicksort
-clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/mergesort
-clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/mergesort?
-clj꞉assingment4-clj.core꞉> 
-nil
-clj꞉assingment4-clj.core꞉> 
-#'assingment4-clj.core/quicksort?
-clj꞉assingment4-clj.core꞉> 
-nil
-clj꞉assingment4-clj.core꞉> 
 Quicksort on sorted list of 1 million numbers:
-"Elapsed time: 2256.884542 msecs"
+"Elapsed time: 2201.807875 msecs"
 Mergesort on sorted list of 1 million numbers:
-"Elapsed time: 3252.587084 msecs"
+"Elapsed time: 3276.313375 msecs"
 Quicksort on reverse list of 1 million numbers:
-"Elapsed time: 5387.777834 msecs"
+"Elapsed time: 4971.995292 msecs"
 Mergesort on reverse list of 1 million numbers:
-"Elapsed time: 3319.365083 msecs"
+"Elapsed time: 3207.531041 msecs"
 "Part 5 Complete"
-clj꞉assingment4-clj.core꞉> 
-Built-in Sort on sorted list of 1 million numbers:
-"Elapsed time: 59.075042 msecs"
-Built-in Sort on reverse list of 1 million numbers:
-"Elapsed time: 34.755125 msecs"
-"Part 7 Complete"
 clj꞉assingment4-clj.core꞉> 
